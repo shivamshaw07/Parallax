@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* to avoid stickiness of the images we preserve 3d effect */
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-4px) scale(6);
+}
+.foreground{
+    transform: translateZ(-2px) scale(3);
+}
+.foreground, .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: 1; */
+    object-fit: cover;
+}
+
+h1{
+    position: relative;
+    top: 17rem;
+    color: azure;
+    font-size: 6rem;
+}
+.sechead{
+    padding: 0 7%;
+    font-size: 3rem;
+}
+.text{
+    font-size: 1.3rem;
+    padding: 0 7%;
+    margin: 2rem 0;
+}
+section{
+    background-color: rgb(45, 45,45);
+    color: white;
+    /* padding: 0 5rem; */
+}
+.bg{
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    height: 60vh;
+   
+}
+.desc{
+    position: absolute;
+    color: beige;
+    font-size: 2.4rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    top: 40%;
+    left: 43%;
+}
+.bg1{
+    background-image: url(biking.jpg);
+}
+.bg2{
+    background-image: url(pexels-tom-fisk-11124979.jpg);
+}
+.bg3{
+    background-image: url(pexels-alexandre-saraiva-carniato-1644724.jpg);
+}
